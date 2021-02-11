@@ -31,8 +31,11 @@ function Home() {
     setSearch({ [e.target.name]: e.target.value})
   }
 
-  async function handleSearch(e, p = pagination.current) {
-    e && e.preventDefault()
+  async function handleSearch(e, p = 0) {
+    if (e) {
+      e.preventDefault()
+      setPagination({ ...pagination, current: 0 })
+    }
     setIsLoading(true)
     console.log('GO_TO_PAGE', p)
     try {
@@ -194,12 +197,14 @@ function Home() {
       </header>
       {renderResults()}
       {renderDetails()}
-      {isLoading && (
-        <div className="loading-container">
-          <img src={loaderImg} alt="" />
-          <p>Loading</p>
-        </div>
-      )}
+
+      <div
+        className="loading-container"
+        style={!isLoading ? { opacity: 0, pointerEvents: 'none' } : {}}
+      >
+        <img src={loaderImg} alt="" />
+        <p>Loading</p>
+      </div>
     </div>
   )
 }
