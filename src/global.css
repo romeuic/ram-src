@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('http://db.onlinewebfonts.com/c/5403db4e1a69d1dc66c1390eaca099d8?family=Seravek+Basic');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #040404;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button {
+  height: 42px;
+  padding: 10px 14px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: transparent;
+  color: #fff;
+}
+
+button {
+  padding: 10px 17px;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 200ms;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.button:active {
+  background-color: transparent;
+}
