@@ -86,6 +86,8 @@ function Home() {
 
             <div className="about">
               <div className="title">ABOUT</div>
+              <p style={{ margin: 8 }}>to</p>
+              <p>change</p>
             </div>
 
             <button className="close-btn" onClick={() => setDetails(null)}>Close</button>
