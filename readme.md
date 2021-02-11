@@ -4,3 +4,6 @@ To be able to run `npm` commands.
 Get `npm` in the link below:
 
 https://www.npmjs.com/get-npm
+
+- `npm install`
+- `npm start`
