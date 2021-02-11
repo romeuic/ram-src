@@ -5,6 +5,9 @@ Get `npm` in the link below:
 
 https://www.npmjs.com/get-npm
 
+Open the terminal and navigate to the project's root folder.
+Then run the following commands:
+
 - `npm install`
 - `npm start`
 
