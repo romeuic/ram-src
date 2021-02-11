@@ -7,3 +7,6 @@ https://www.npmjs.com/get-npm
 
 - `npm install`
 - `npm start`
+
+Or just check it out online:
+### https://ram-io.web.app
